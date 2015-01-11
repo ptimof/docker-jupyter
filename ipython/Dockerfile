@@ -19,7 +19,7 @@ RUN pip2 install scikit-image vincent dill networkx \
 RUN apt-get install -y wget libboost-all-dev \
  && wget -q https://github.com/lballabio/quantlib/archive/QuantLib-v1.4.1.tar.gz \
  && tar zxf QuantLib-v1.4.1.tar.gz \
- && (cd quantlib-QuantLib-v1.4.1/QuantLib && ./autogen.sh && make && make install && ldconfig) \
+ && (cd quantlib-QuantLib-v1.4.1/QuantLib && ./autogen.sh && ./configure && make && make install && ldconfig) \
  && rm -rf QuantLib-v1.4.1.tar.gz quantlib-QuantLib-v1.4.1 \
  && pip2 install git+https://github.com/enthought/pyql.git
 
