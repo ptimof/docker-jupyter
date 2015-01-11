@@ -7,7 +7,7 @@ Docker containers for [Jupyter](http://jupyter.org).
 	docker build -t ptimof/jupyterhub hub
 	docker build -t ptimof/jupyter-base ipython
 	docker build -t ptimof/jupyter-pyql pyql
-	docker build -t ptimof/jupyter-systemuser
+	docker build -t ptimof/jupyter-systemuser systemuser
 
 Alternatively, you may wish to pull these images from Docker Hub, as `jupyter-base`
 will take quite some time to build, as [QuantLib](http://quantlib.org) is built from
