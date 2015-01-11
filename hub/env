@@ -1,0 +1,4 @@
+# Complete this, and place it in a secure spot on host system (root:root 0400)
+GITHUB_CLIENT_ID=
+GITHUB_CLIENT_SECRET=
+OAUTH_CALLBACK_URL=http://example.com:8000/hub/oauth_callback
