@@ -7,6 +7,7 @@ Docker containers for [Jupyter](http://jupyter.org).
 	docker build -t ptimof/jupyterhub hub
 	docker build -t ptimof/jupyter-base ipython
 	docker build -t ptimof/jupyter-pyql pyql
+	docker build -t ptimof/jupyter-moar moar
 	docker build -t ptimof/jupyter-systemuser systemuser
 
 Alternatively, you may wish to pull these images from Docker Hub, as `jupyter-base`

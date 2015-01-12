@@ -12,3 +12,7 @@ RUN apt-get install -y wget libboost-all-dev \
  && (cd quantlib-QuantLib-v1.4.1/QuantLib && ./autogen.sh && ./configure && make && make install && ldconfig) \
  && rm -rf QuantLib-v1.4.1.tar.gz quantlib-QuantLib-v1.4.1 \
  && pip2 install git+https://github.com/enthought/pyql.git
+
+# modules required by PyQL examples
+RUN pip2 install tabulate \
+ && pip3 install tabulate
