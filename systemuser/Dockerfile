@@ -1,7 +1,7 @@
-# Build as ptimof/jupyter-systemuser
 # Run with the DockerSpawner in JupyterHub
+# docker build -t ptimof/systemuser .
 
-FROM ptimof/jupyter-moar
+FROM ptimof/ipython
 
 MAINTAINER Peter Timofejew <peter@timofejew.com>
 

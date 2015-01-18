@@ -1,6 +1,6 @@
-# ptimof/jupyter-base
+# ptimof/ipython
 
-Base [Jupyter](http://jupyter.org) Docker image. See [GitHub repo](https://github.com/ptimof/docker-jupyter)
+Base [IPython](http://ipython.org) Docker image. See [GitHub repo](https://github.com/ptimof/docker-jupyter)
 for usage instructions.
 
 ## Contents
@@ -15,4 +15,7 @@ additional goodies:
 * [NetworkX](http://networkx.github.io)
 * [R](http://www.r-project.org) kernel
 * [Julia](http://julialang.org) kernel
-* Redis, MongoDB and PostgreSQL Python support
+* [PyQL](https://github.com/enthought/pyql)
+* [RQuantLib](http://dirk.eddelbuettel.com/code/rquantlib.html)
+* [librosa](https://github.com/bmcfee/librosa)
+* Cloudant, Redis, MongoDB and PostgreSQL Python support

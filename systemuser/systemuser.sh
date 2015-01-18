@@ -22,7 +22,7 @@ if [ ! -d $HOME/Notebooks/.setup ]; then
 	#sudo -E -u $USER find $HOME/Notebooks/Examples -name '*.ipynb' -exec ipython trust {} \;
 fi
 
-sudo -E -u $USER jupyterhub-singleuser \
+exec sudo -E -u $USER jupyterhub-singleuser \
   --port=8888 \
   --ip=0.0.0.0 \
   --user=$JPY_USER \
