@@ -4,14 +4,16 @@ Docker containers for [Jupyter](http://jupyter.org).
 
 # Building
 
-	docker build -t ptimof/jupyterhub hub
 	docker build -t ptimof/ipython ipython
-	docker build -t ptimof/jupyter-systemuser systemuser
+	docker build -t ptimof/jupyterhub jupyterhub
+	docker build -t ptimof/scipystack scipystack
+	docker build -t ptimof/ipython-extras ipython-extras
+	docker build -t ptimof/systemuser systemuser
 
 Alternatively, you may wish to pull these images from Docker Hub:
 
 	docker pull ptimof/jupyterhub
-	docker pull ptimof/jupyter-systemuser
+	docker pull ptimof/systemuser
 
 # Setup
 
@@ -36,7 +38,7 @@ Ensure that this file is only readable by `root`:
 
 # Running
 
-	docker run -d -p 8000:8000 -v /var/run/docker.sock:/docker.sock -v /etc/passwd:/srv/jupyterhub/userlist --env-file /usr/local/etc/jupyterhub.env --net=host ptimof/jupyterhub
+	docker run -d -p 8000:8000 -v /var/run/docker.sock:/docker.sock -v /etc/passwd:/srv/jupyterhub/userlist --env-file /usr/local/etc/jupyter/env --net=host --name jupyterhub ptimof/jupyterhub
 
 # Debugging
 

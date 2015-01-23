@@ -1,7 +1,7 @@
 # A fairly loaded IPython Notebook server
 # docker build -t ptimof/notebook .
 
-FROM ptimof/ipython
+FROM ptimof/ipython-extras
 
 MAINTAINER Peter Timofejew <peter@timofejew.com>
 
