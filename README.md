@@ -1,6 +1,7 @@
 # docker-jupyter
 
-Docker containers for [Jupyter](http://jupyter.org).
+Docker containers for [Jupyter](http://jupyter.org). For a standalone, single user Notebook app, see
+[ptimof/notebook](https://github.com/ptimof/docker-jupyter/tree/master/notebook).
 
 # Building
 
