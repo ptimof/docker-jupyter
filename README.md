@@ -5,11 +5,12 @@ Docker containers for [Jupyter](http://jupyter.org). For a standalone, single us
 
 # Building
 
-	docker build -t ptimof/ipython ipython
-	docker build -t ptimof/jupyterhub jupyterhub
-	docker build -t ptimof/scipystack scipystack
-	docker build -t ptimof/ipython-extras ipython-extras
-	docker build -t ptimof/systemuser systemuser
+	docker build -t ptimof/ipython 0-ipython
+	docker build -t ptimof/scipystack 1-scipystack
+	docker build -t ptimof/ipython-extras 2-ipython-extras
+	docker build -t ptimof/notebook 3-notebook   # optional
+	docker build -t ptimof/systemuser 4-systemuser
+	docker build -t ptimof/jupyterhub 5-jupyterhub
 
 Alternatively, you may wish to pull these images from Docker Hub:
 
